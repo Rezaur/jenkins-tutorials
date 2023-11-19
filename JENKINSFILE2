@@ -2,8 +2,8 @@ pipeline {
     agent any
     stages {
         stage('build') {
-            steps {
-                sh 'python3 -v'
+            steps { 
+                sh 'python3 --version'
                 sh 'ls -lrth'
             }
         }
